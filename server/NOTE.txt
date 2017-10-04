@@ -1,0 +1,2 @@
+This is a client-side only app using firebase as data-storage so there is no
+server code here.

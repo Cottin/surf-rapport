@@ -1,0 +1,76 @@
+{
+  "name": "surf-rapport",
+  "version": "1.0.0",
+  "description": "Report the wind conditions to your fellow surfers",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha 'src/**/test*.coffee' --watch --compilers coffee:coffee-script/register",
+    "dist": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "dev-data": "coffee ./devDataServer.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cottin/surf-rapport.git"
+  },
+  "keywords": [
+    "windsurf",
+    "surf",
+    "firebase"
+  ],
+  "author": "Victor Cottin <victor@wecodebetter.se> (http://www.wecodebetter.se/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cottin/surf-rapport/issues"
+  },
+  "homepage": "https://github.com/Cottin/surf-rapport",
+  "devDependencies": {
+    "babel-core": "^6.0.20",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^6.0.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "coffee-loader": "^0.7.3",
+    "coffee-script": "^1.12.4",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.0",
+    "dev-data": "^0.1.4",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^3.6.2",
+    "express": "^4.13.4",
+    "http-proxy": "^1.16.2",
+    "raw-loader": "^0.5.1",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.16.1",
+    "svgo": "^0.7.2",
+    "svgo-loader": "^1.2.1",
+    "webpack": "^1.12.2",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "create-react-class": "^15.5.2",
+    "date-fns": "^1.28.3",
+    "event-source-polyfill": "0.0.9",
+    "fela": "^5.0.4",
+    "firebase": "^4.3.0",
+    "inline-style-prefixer": "^3.0.2",
+    "moment": "^2.18.1",
+    "oublie": "^0.1.19",
+    "pawpaw": "^0.1.14",
+    "phlox": "^0.1.17",
+    "popsiql": "^0.1.48",
+    "prop-types": "^15.5.8",
+    "ramda": "^0.23.0",
+    "ramda-extras": "^0.2.15",
+    "react": "^15.4.0",
+    "react-addons-pure-render-mixin": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "react-fela": "^5.1.1",
+    "react-functional-router": "^0.1.7",
+    "shortstyle": "^0.1.2",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
